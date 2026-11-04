@@ -1,0 +1,142 @@
+{
+  "sources": [
+    {
+      "id": "fitacf25",
+      "label": "FitACF 2.5",
+      "dates": [
+        {
+          "date": "20240324",
+          "label": "2024-03-24",
+          "combined": "figures/combined_all_DA_20240324_fitacf25.png?v=1793764011",
+          "au_al": "figures/au_al_faccheck_20240324_fitacf25.png?v=1793764012",
+          "corr": "figures/corr_factor_20240324_fitacf25.png?v=1793764013",
+          "movie": "all_sub_auroral_20240324_fitacf25/all_sub_auroral_20240324.mp4?v=1793765485",
+          "polar": "all_sub_auroral_20240324_fitacf25/all_sub_auroral_polar_20240324.mp4?v=1793765500"
+        },
+        {
+          "date": "20240628",
+          "label": "2024-06-28",
+          "combined": "figures/combined_all_DA_20240628_fitacf25.png?v=1793773958",
+          "au_al": "figures/au_al_faccheck_20240628_fitacf25.png?v=1793773959",
+          "corr": "figures/corr_factor_20240628_fitacf25.png?v=1793773959",
+          "movie": "all_sub_auroral_20240628_fitacf25/all_sub_auroral_20240628.mp4?v=1793775079",
+          "polar": "all_sub_auroral_20240628_fitacf25/all_sub_auroral_polar_20240628.mp4?v=1793775094"
+        },
+        {
+          "date": "20240804",
+          "label": "2024-08-04",
+          "combined": "figures/combined_all_DA_20240804_fitacf25.png?v=1793763866",
+          "au_al": "figures/au_al_faccheck_20240804_fitacf25.png?v=1793763867",
+          "corr": "figures/corr_factor_20240804_fitacf25.png?v=1793763867",
+          "movie": "all_sub_auroral_20240804_fitacf25/all_sub_auroral_20240804.mp4?v=1793766481",
+          "polar": "all_sub_auroral_20240804_fitacf25/all_sub_auroral_polar_20240804.mp4?v=1793766496"
+        },
+        {
+          "date": "20240912",
+          "label": "2024-09-12",
+          "combined": "figures/combined_all_DA_20240912_fitacf25.png?v=1793763700",
+          "au_al": "figures/au_al_faccheck_20240912_fitacf25.png?v=1793763700",
+          "corr": "figures/corr_factor_20240912_fitacf25.png?v=1793763701",
+          "movie": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_20240912.mp4?v=1793768255",
+          "polar": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_polar_20240912.mp4?v=1793768270"
+        },
+        {
+          "date": "20240917",
+          "label": "2024-09-17",
+          "combined": "figures/combined_all_DA_20240917_fitacf25.png?v=1793763428",
+          "au_al": "figures/au_al_faccheck_20240917_fitacf25.png?v=1793763428",
+          "corr": "figures/corr_factor_20240917_fitacf25.png?v=1793763429",
+          "movie": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_20240917.mp4?v=1793768923",
+          "polar": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_polar_20240917.mp4?v=1793768939"
+        },
+        {
+          "date": "20241008",
+          "label": "2024-10-08",
+          "combined": "figures/combined_all_DA_20241008_fitacf25.png?v=1793760928",
+          "au_al": "figures/au_al_faccheck_20241008_fitacf25.png?v=1793760928",
+          "corr": "figures/corr_factor_20241008_fitacf25.png?v=1793760929",
+          "movie": "all_sub_auroral_20241008_fitacf25/all_sub_auroral_20241008.mp4?v=1793770309",
+          "polar": "all_sub_auroral_20241008_fitacf25/all_sub_auroral_polar_20241008.mp4?v=1793770324"
+        },
+        {
+          "date": "20241109",
+          "label": "2024-11-09",
+          "combined": "figures/combined_all_DA_20241109_fitacf25.png?v=1793760467",
+          "au_al": "figures/au_al_faccheck_20241109_fitacf25.png?v=1793760468",
+          "corr": "figures/corr_factor_20241109_fitacf25.png?v=1793760468",
+          "movie": "all_sub_auroral_20241109_fitacf25/all_sub_auroral_20241109.mp4?v=1793771126",
+          "polar": "all_sub_auroral_20241109_fitacf25/all_sub_auroral_polar_20241109.mp4?v=1793771142"
+        }
+      ]
+    },
+    {
+      "id": "fitacf30_despeck",
+      "label": "FitACF 3.0 despeck",
+      "dates": [
+        {
+          "date": "20240324",
+          "label": "2024-03-24",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240324.png?v=1793776944",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240324.png?v=1793776945",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240324.png?v=1793776946",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_20240324.mp4?v=1793713327",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_polar_20240324.mp4?v=1793713337"
+        },
+        {
+          "date": "20240628",
+          "label": "2024-06-28",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240628.png?v=1793778006",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240628.png?v=1793778006",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240628.png?v=1793778007",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_20240628.mp4?v=1793710667",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_polar_20240628.mp4?v=1793710678"
+        },
+        {
+          "date": "20240804",
+          "label": "2024-08-04",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240804.png?v=1793778778",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240804.png?v=1793778779",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240804.png?v=1793778779",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_20240804.mp4?v=1793715864",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_polar_20240804.mp4?v=1793715875"
+        },
+        {
+          "date": "20240912",
+          "label": "2024-09-12",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240912.png?v=1793778958",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240912.png?v=1793778958",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240912.png?v=1793778959",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_20240912.mp4?v=1793717663",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_polar_20240912.mp4?v=1793717673"
+        },
+        {
+          "date": "20240917",
+          "label": "2024-09-17",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240917.png?v=1793779162",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240917.png?v=1793779163",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240917.png?v=1793779164",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_20240917.mp4?v=1793718592",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_polar_20240917.mp4?v=1793718602"
+        },
+        {
+          "date": "20241008",
+          "label": "2024-10-08",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20241008.png?v=1793779354",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20241008.png?v=1793779355",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20241008.png?v=1793779356",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20241008/all_sub_auroral_20241008.mp4?v=1793719220",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241008/all_sub_auroral_polar_20241008.mp4?v=1793719231"
+        },
+        {
+          "date": "20241109",
+          "label": "2024-11-09",
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20241109.png?v=1793779477",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20241109.png?v=1793779478",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20241109.png?v=1793779478",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_20241109.mp4?v=1793720164",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_polar_20241109.mp4?v=1793720175"
+        }
+      ]
+    }
+  ]
+}
