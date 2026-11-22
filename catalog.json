@@ -7,38 +7,50 @@
         {
           "date": "20240324",
           "label": "2024-03-24",
-          "combined": "figures/combined_all_DA_20240324_fitacf25.png?v=1793764011",
-          "au_al": "figures/au_al_faccheck_20240324_fitacf25.png?v=1793764012",
-          "corr": "figures/corr_factor_20240324_fitacf25.png?v=1793764013",
+          "combined": "figures/combined_all_DA_20240324_fitacf25.png?v=1794068528",
+          "au_al": "figures/au_al_faccheck_20240324_fitacf25.png?v=1794068529",
+          "corr": "figures/corr_factor_20240324_fitacf25.png?v=1794068529",
           "movie": "all_sub_auroral_20240324_fitacf25/all_sub_auroral_20240324.mp4?v=1793765485",
-          "polar": "all_sub_auroral_20240324_fitacf25/all_sub_auroral_polar_20240324.mp4?v=1793765500"
+          "polar": "all_sub_auroral_20240324_fitacf25/all_sub_auroral_polar_20240324.mp4?v=1793765500",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240628",
           "label": "2024-06-28",
-          "combined": "figures/combined_all_DA_20240628_fitacf25.png?v=1793773958",
-          "au_al": "figures/au_al_faccheck_20240628_fitacf25.png?v=1793773959",
-          "corr": "figures/corr_factor_20240628_fitacf25.png?v=1793773959",
+          "combined": "figures/combined_all_DA_20240628_fitacf25.png?v=1794070510",
+          "au_al": "figures/au_al_faccheck_20240628_fitacf25.png?v=1794070511",
+          "corr": "figures/corr_factor_20240628_fitacf25.png?v=1794070511",
           "movie": "all_sub_auroral_20240628_fitacf25/all_sub_auroral_20240628.mp4?v=1793775079",
-          "polar": "all_sub_auroral_20240628_fitacf25/all_sub_auroral_polar_20240628.mp4?v=1793775094"
+          "polar": "all_sub_auroral_20240628_fitacf25/all_sub_auroral_polar_20240628.mp4?v=1793775094",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240804",
           "label": "2024-08-04",
-          "combined": "figures/combined_all_DA_20240804_fitacf25.png?v=1793763866",
-          "au_al": "figures/au_al_faccheck_20240804_fitacf25.png?v=1793763867",
-          "corr": "figures/corr_factor_20240804_fitacf25.png?v=1793763867",
+          "combined": "figures/combined_all_DA_20240804_fitacf25.png?v=1794069057",
+          "au_al": "figures/au_al_faccheck_20240804_fitacf25.png?v=1794069058",
+          "corr": "figures/corr_factor_20240804_fitacf25.png?v=1794069059",
           "movie": "all_sub_auroral_20240804_fitacf25/all_sub_auroral_20240804.mp4?v=1793766481",
-          "polar": "all_sub_auroral_20240804_fitacf25/all_sub_auroral_polar_20240804.mp4?v=1793766496"
+          "polar": "all_sub_auroral_20240804_fitacf25/all_sub_auroral_polar_20240804.mp4?v=1793766496",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240912",
           "label": "2024-09-12",
-          "combined": "figures/combined_all_DA_20240912_fitacf25.png?v=1793763700",
-          "au_al": "figures/au_al_faccheck_20240912_fitacf25.png?v=1793763700",
-          "corr": "figures/corr_factor_20240912_fitacf25.png?v=1793763701",
-          "movie": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_20240912.mp4?v=1793768255",
-          "polar": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_polar_20240912.mp4?v=1793768270"
+          "combined": "figures/combined_all_DA_20240912_fitacf25.png?v=1794190721",
+          "au_al": "figures/au_al_faccheck_20240912_fitacf25.png?v=1794190721",
+          "corr": "figures/corr_factor_20240912_fitacf25.png?v=1794190722",
+          "movie": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_20240912.mp4?v=1794193450",
+          "polar": "all_sub_auroral_20240912_fitacf25/all_sub_auroral_polar_20240912.mp4?v=1794193465",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240917",
@@ -46,8 +58,11 @@
           "combined": "figures/combined_all_DA_20240917_fitacf25.png?v=1793763428",
           "au_al": "figures/au_al_faccheck_20240917_fitacf25.png?v=1793763428",
           "corr": "figures/corr_factor_20240917_fitacf25.png?v=1793763429",
-          "movie": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_20240917.mp4?v=1793768923",
-          "polar": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_polar_20240917.mp4?v=1793768939"
+          "movie": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_20240917.mp4?v=1794196485",
+          "polar": "all_sub_auroral_20240917_fitacf25/all_sub_auroral_polar_20240917.mp4?v=1794196500",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20241008",
@@ -56,16 +71,22 @@
           "au_al": "figures/au_al_faccheck_20241008_fitacf25.png?v=1793760928",
           "corr": "figures/corr_factor_20241008_fitacf25.png?v=1793760929",
           "movie": "all_sub_auroral_20241008_fitacf25/all_sub_auroral_20241008.mp4?v=1793770309",
-          "polar": "all_sub_auroral_20241008_fitacf25/all_sub_auroral_polar_20241008.mp4?v=1793770324"
+          "polar": "all_sub_auroral_20241008_fitacf25/all_sub_auroral_polar_20241008.mp4?v=1793770324",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20241109",
           "label": "2024-11-09",
-          "combined": "figures/combined_all_DA_20241109_fitacf25.png?v=1793760467",
-          "au_al": "figures/au_al_faccheck_20241109_fitacf25.png?v=1793760468",
-          "corr": "figures/corr_factor_20241109_fitacf25.png?v=1793760468",
+          "combined": "figures/combined_all_DA_20241109_fitacf25.png?v=1794197847",
+          "au_al": "figures/au_al_faccheck_20241109_fitacf25.png?v=1794197848",
+          "corr": "figures/corr_factor_20241109_fitacf25.png?v=1794197849",
           "movie": "all_sub_auroral_20241109_fitacf25/all_sub_auroral_20241109.mp4?v=1793771126",
-          "polar": "all_sub_auroral_20241109_fitacf25/all_sub_auroral_polar_20241109.mp4?v=1793771142"
+          "polar": "all_sub_auroral_20241109_fitacf25/all_sub_auroral_polar_20241109.mp4?v=1793771142",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         }
       ]
     },
@@ -76,47 +97,62 @@
         {
           "date": "20240324",
           "label": "2024-03-24",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240324.png?v=1793776944",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240324.png?v=1793776945",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240324.png?v=1793776946",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_20240324.mp4?v=1793713327",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_polar_20240324.mp4?v=1793713337"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240324.png?v=1793977936",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240324.png?v=1793977937",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240324.png?v=1793977938",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_20240324.mp4?v=1793976822",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240324/all_sub_auroral_polar_20240324.mp4?v=1793976848",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240628",
           "label": "2024-06-28",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240628.png?v=1793778006",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240628.png?v=1793778006",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240628.png?v=1793778007",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_20240628.mp4?v=1793710667",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_polar_20240628.mp4?v=1793710678"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240628.png?v=1793979735",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240628.png?v=1793979736",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240628.png?v=1793979737",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_20240628.mp4?v=1793997085",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240628/all_sub_auroral_polar_20240628.mp4?v=1793997633",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240804",
           "label": "2024-08-04",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240804.png?v=1793778778",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240804.png?v=1793778779",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240804.png?v=1793778779",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_20240804.mp4?v=1793715864",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_polar_20240804.mp4?v=1793715875"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240804.png?v=1793948857",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240804.png?v=1793948858",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240804.png?v=1793948859",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_20240804.mp4?v=1793950074",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240804/all_sub_auroral_polar_20240804.mp4?v=1793950133",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240912",
           "label": "2024-09-12",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240912.png?v=1793778958",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240912.png?v=1793778958",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240912.png?v=1793778959",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_20240912.mp4?v=1793717663",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_polar_20240912.mp4?v=1793717673"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240912.png?v=1794061197",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240912.png?v=1794061197",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240912.png?v=1794061198",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_20240912.mp4?v=1794065273",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240912/all_sub_auroral_polar_20240912.mp4?v=1794065299",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20240917",
           "label": "2024-09-17",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240917.png?v=1793779162",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240917.png?v=1793779163",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240917.png?v=1793779164",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_20240917.mp4?v=1793718592",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_polar_20240917.mp4?v=1793718602"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20240917.png?v=1794065929",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20240917.png?v=1794065930",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20240917.png?v=1794065931",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_20240917.mp4?v=1794066687",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20240917/all_sub_auroral_polar_20240917.mp4?v=1794066703",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20241008",
@@ -125,16 +161,437 @@
           "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20241008.png?v=1793779355",
           "corr": "new_minor_storm_all_DA/figures/corr_factor_20241008.png?v=1793779356",
           "movie": "new_minor_storm_all_DA/all_sub_auroral_20241008/all_sub_auroral_20241008.mp4?v=1793719220",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241008/all_sub_auroral_polar_20241008.mp4?v=1793719231"
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241008/all_sub_auroral_polar_20241008.mp4?v=1793719231",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
         },
         {
           "date": "20241109",
           "label": "2024-11-09",
-          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20241109.png?v=1793779477",
-          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20241109.png?v=1793779478",
-          "corr": "new_minor_storm_all_DA/figures/corr_factor_20241109.png?v=1793779478",
-          "movie": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_20241109.mp4?v=1793720164",
-          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_polar_20241109.mp4?v=1793720175"
+          "combined": "new_minor_storm_all_DA/figures/combined_all_DA_20241109.png?v=1794067140",
+          "au_al": "new_minor_storm_all_DA/figures/au_al_faccheck_20241109.png?v=1794067141",
+          "corr": "new_minor_storm_all_DA/figures/corr_factor_20241109.png?v=1794067142",
+          "movie": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_20241109.mp4?v=1794067952",
+          "polar": "new_minor_storm_all_DA/all_sub_auroral_20241109/all_sub_auroral_polar_20241109.mp4?v=1794067968",
+          "pot_los": null,
+          "los_fov": null,
+          "rti": null
+        }
+      ]
+    },
+    {
+      "id": "fitacf3_despeck_processed",
+      "label": "FitACF 3.0 despeck processed",
+      "dates": [
+        {
+          "date": "20240324",
+          "label": "2024-03-24",
+          "combined": "new_minor_storm_all_DA/Processed/combined_all_DA_20240324.png?v=1795142677",
+          "au_al": "new_minor_storm_all_DA/Processed/au_al_faccheck_20240324.png?v=1795142678",
+          "corr": "new_minor_storm_all_DA/Processed/corr_factor_20240324.png?v=1795142679",
+          "movie": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240324/all_sub_auroral_20240324.mp4?v=1795167855",
+          "polar": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240324/all_sub_auroral_polar_20240324.mp4?v=1795167873",
+          "pot_los": "new_minor_storm_all_DA/Processed/sd_polar_fov_pot_20240324.mp4?v=1795170587",
+          "los_fov": "new_minor_storm_all_DA/Processed/sd_polar_fov_fan_20240324_1230.png?v=1795167895",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_cly_bm10.png?v=1795263731"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_cve_bm10.png?v=1795263732"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_cvw_bm10.png?v=1795263732"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_fhe_bm10.png?v=1795263732"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_fhw_bm10.png?v=1795263733"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_hkw_bm10.png?v=1795263733"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_hok_bm10.png?v=1795263733"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_ice_bm10.png?v=1795263734"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_icw_bm10.png?v=1795263734"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_inv_bm10.png?v=1795263734"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_jme_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_kap_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_kod_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_ksr_bm10.png?v=1795263736"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_pgr_bm10.png?v=1795263736"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_rkn_bm10.png?v=1795263736"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_sas_bm10.png?v=1795263737"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240324/sd_rti_20240324_wal_bm10.png?v=1795263737"
+            }
+          ]
+        },
+        {
+          "date": "20240628",
+          "label": "2024-06-28",
+          "combined": "new_minor_storm_all_DA/Processed/combined_all_DA_20240628.png?v=1795146893",
+          "au_al": "new_minor_storm_all_DA/Processed/au_al_faccheck_20240628.png?v=1795146894",
+          "corr": "new_minor_storm_all_DA/Processed/corr_factor_20240628.png?v=1795146895",
+          "movie": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240628/all_sub_auroral_20240628.mp4?v=1795171076",
+          "polar": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240628/all_sub_auroral_polar_20240628.mp4?v=1795171087",
+          "pot_los": "new_minor_storm_all_DA/Processed/sd_polar_fov_pot_20240628.mp4?v=1795172930",
+          "los_fov": "new_minor_storm_all_DA/Processed/sd_polar_fov_fan_20240628_1230.png?v=1795171101",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_cly_bm10.png?v=1795263743"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_cve_bm10.png?v=1795263743"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_cvw_bm10.png?v=1795263743"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_hkw_bm10.png?v=1795263744"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_hok_bm10.png?v=1795263744"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_ice_bm10.png?v=1795263744"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_icw_bm10.png?v=1795263744"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_inv_bm10.png?v=1795263745"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_jme_bm10.png?v=1795263745"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_kap_bm10.png?v=1795263745"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_kod_bm10.png?v=1795263746"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_ksr_bm10.png?v=1795263746"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_pgr_bm10.png?v=1795263746"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_rkn_bm10.png?v=1795263747"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_sas_bm10.png?v=1795263747"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240628/sd_rti_20240628_wal_bm10.png?v=1795263747"
+            }
+          ]
+        },
+        {
+          "date": "20240804",
+          "label": "2024-08-04",
+          "combined": "new_minor_storm_all_DA/Processed/combined_all_DA_20240804.png?v=1795141283",
+          "au_al": "new_minor_storm_all_DA/Processed/au_al_faccheck_20240804.png?v=1795141284",
+          "corr": "new_minor_storm_all_DA/Processed/corr_factor_20240804.png?v=1795141285",
+          "movie": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240804/all_sub_auroral_20240804.mp4?v=1795142098",
+          "polar": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240804/all_sub_auroral_polar_20240804.mp4?v=1795142116",
+          "pot_los": "new_minor_storm_all_DA/Processed/sd_polar_fov_pot_20240804.mp4?v=1795159594",
+          "los_fov": "new_minor_storm_all_DA/Processed/sd_polar_fov_fan_20240804_1230.png?v=1795142154",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_cly_bm10.png?v=1795263753"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_cve_bm10.png?v=1795263754"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_cvw_bm10.png?v=1795263754"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_fhe_bm10.png?v=1795263754"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_fhw_bm10.png?v=1795263755"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_hkw_bm10.png?v=1795263755"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_hok_bm10.png?v=1795263755"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_ice_bm10.png?v=1795263756"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_icw_bm10.png?v=1795263756"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_inv_bm10.png?v=1795263756"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_jme_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_kap_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_kod_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_ksr_bm10.png?v=1795263758"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_pgr_bm10.png?v=1795263758"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_rkn_bm10.png?v=1795263758"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_sas_bm10.png?v=1795263758"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240804/sd_rti_20240804_wal_bm10.png?v=1795263759"
+            }
+          ]
+        },
+        {
+          "date": "20240917",
+          "label": "2024-09-17",
+          "combined": "new_minor_storm_all_DA/Processed/combined_all_DA_20240917.png?v=1795187378",
+          "au_al": "new_minor_storm_all_DA/Processed/au_al_faccheck_20240917.png?v=1795187380",
+          "corr": "new_minor_storm_all_DA/Processed/corr_factor_20240917.png?v=1795187382",
+          "movie": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240917/all_sub_auroral_20240917.mp4?v=1795212638",
+          "polar": "new_minor_storm_all_DA/Processed/all_sub_auroral_20240917/all_sub_auroral_polar_20240917.mp4?v=1795213184",
+          "pot_los": "new_minor_storm_all_DA/Processed/sd_polar_fov_pot_20240917.mp4?v=1795241936",
+          "los_fov": "new_minor_storm_all_DA/Processed/sd_polar_fov_fan_20240917_1230.png?v=1795213738",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_cly_bm10.png?v=1795263777"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_cve_bm10.png?v=1795263778"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_cvw_bm10.png?v=1795263778"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_fhe_bm10.png?v=1795263778"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_fhw_bm10.png?v=1795263778"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_hkw_bm10.png?v=1795263779"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_hok_bm10.png?v=1795263779"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_ice_bm10.png?v=1795263779"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_icw_bm10.png?v=1795263780"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_inv_bm10.png?v=1795263780"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_jme_bm10.png?v=1795263780"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_kap_bm10.png?v=1795263781"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_ksr_bm10.png?v=1795263781"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_pgr_bm10.png?v=1795263781"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_rkn_bm10.png?v=1795263782"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_sas_bm10.png?v=1795263782"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20240917/sd_rti_20240917_wal_bm10.png?v=1795263782"
+            }
+          ]
+        },
+        {
+          "date": "20241109",
+          "label": "2024-11-09",
+          "combined": null,
+          "au_al": null,
+          "corr": null,
+          "movie": "new_minor_storm_all_DA/Processed/all_sub_auroral_20241109/all_sub_auroral_20241109.mp4?v=1795262375",
+          "polar": "new_minor_storm_all_DA/Processed/all_sub_auroral_20241109/all_sub_auroral_polar_20241109.mp4?v=1795262390",
+          "pot_los": "new_minor_storm_all_DA/Processed/sd_polar_fov_pot_20241109.mp4?v=1795267885",
+          "los_fov": "new_minor_storm_all_DA/Processed/sd_polar_fov_fan_20241109_1230.png?v=1795262421",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_cly_bm10.png?v=1795263796"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_cve_bm10.png?v=1795263796"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_cvw_bm10.png?v=1795263797"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_fhe_bm10.png?v=1795263797"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_fhw_bm10.png?v=1795263797"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_hkw_bm10.png?v=1795263798"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_hok_bm10.png?v=1795263798"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_ice_bm10.png?v=1795263799"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_icw_bm10.png?v=1795263799"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_inv_bm10.png?v=1795263799"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_jme_bm10.png?v=1795263800"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_kod_bm10.png?v=1795263800"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_ksr_bm10.png?v=1795263800"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_pgr_bm10.png?v=1795263801"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_rkn_bm10.png?v=1795263801"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_sas_bm10.png?v=1795263802"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_wal_bm10.png?v=1795263802"
+            }
+          ]
         }
       ]
     }

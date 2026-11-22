@@ -48,7 +48,11 @@
       font-size: 0.92rem;
       color: var(--muted);
     }
-    .sources { display: flex; gap: 0.4rem; }
+    .sources { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+    @media (min-width: 980px) {
+      .gallery { grid-template-columns: 1fr 1fr; }
+    }
     .source-btn, select, .chip {
       font: inherit;
       border: 1px solid var(--line);
@@ -116,7 +120,7 @@
 <body>
   <header>
     <h1>FitACF minor-storm results</h1>
-    <p>Pick FitACF 2.5 or FitACF 3.0 despeck, then a date. Combined figure, AU/AL, and sub-auroral movies.</p>
+    <p>Pick FitACF 2.5, FitACF 3.0 despeck, or FitACF 3.0 despeck processed, then a date.</p>
   </header>
   <div class="bar">
     <label>Source</label>
@@ -182,6 +186,30 @@
         $main.innerHTML = `<p class="empty">No ${src ? src.label : ''} results for ${date || 'this date'}.</p>`;
         return;
       }
+      const extra = [];
+      if (item.pot_los) {
+        extra.push(`
+        <section>
+          <h2>Potential and LoS velocity · ${src.label} · ${item.label}</h2>
+          ${mediaBlock(item.pot_los, 'video')}
+        </section>`);
+      }
+      if (item.los_fov) {
+        extra.push(`
+        <section>
+          <h2>All-radar LoS FOV (12:30 UT) · ${src.label} · ${item.label}</h2>
+          ${mediaBlock(item.los_fov, 'image')}
+        </section>`);
+      }
+      if (item.rti && item.rti.length) {
+        extra.push(`
+        <section>
+          <h2>Range–time LoS (beam 10) · ${src.label} · ${item.label}</h2>
+          <div class="gallery">
+            ${item.rti.map((r) => `<div><h2>${r.label}</h2>${mediaBlock(r.src, 'image')}</div>`).join('')}
+          </div>
+        </section>`);
+      }
       $main.innerHTML = `
         ${KIND.map((k) => `
           <section>
@@ -200,7 +228,8 @@
               ${mediaBlock(item.polar, 'video')}
             </div>
           </div>
-        </section>`;
+        </section>
+        ${extra.join('')}`;
     }
 
     function fillDates(preferred) {
