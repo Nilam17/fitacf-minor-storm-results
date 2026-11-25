@@ -53,6 +53,10 @@
     @media (min-width: 980px) {
       .gallery { grid-template-columns: 1fr 1fr; }
     }
+    .compare4 { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+    @media (min-width: 980px) {
+      .compare4 { grid-template-columns: 1fr 1fr; }
+    }
     .source-btn, select, .chip {
       font: inherit;
       border: 1px solid var(--line);
@@ -120,7 +124,7 @@
 <body>
   <header>
     <h1>FitACF minor-storm results</h1>
-    <p>Pick FitACF 2.5, FitACF 3.0 despeck, processed 1, or processed 2, then a date.</p>
+    <p>Pick FitACF 2.5, FitACF 3.0 despeck, processed 1, processed 2, or RT-plot comparison, then a date.</p>
   </header>
   <div class="bar">
     <label>Source</label>
@@ -181,8 +185,49 @@
       return (row.label || '').split('·')[0].trim();
     }
 
+    const COMPARE_ORDER = [
+      'FitACF 2.5',
+      'FitACF 3.0 despeck',
+      'FitACF 3.0 despeck processed 1',
+      'FitACF 3.0 despeck processed 2',
+    ];
+
+    const COMPARE_SOURCES = [
+      {id: 'fitacf25', label: 'FitACF 2.5'},
+      {id: 'fitacf30_despeck', label: 'FitACF 3.0 despeck'},
+      {id: 'fitacf3_despeck_processed1', label: 'FitACF 3.0 despeck processed 1'},
+      {id: 'fitacf3_despeck_processed2', label: 'FitACF 3.0 despeck processed 2'},
+    ];
+
+    function rtiRows(item) {
+      if (item && item.rti_compare && item.rti_compare.length) return item.rti_compare;
+      return (item && item.rti) || [];
+    }
+
+    function comparisonRows(date) {
+      const byKey = {};
+      for (const spec of COMPARE_SOURCES) {
+        const src = sources.find((s) => s.id === spec.id);
+        const item = src && src.dates.find((d) => d.date === date);
+        for (const row of (item && item.rti) || []) {
+          const radar = rtiRadar(row);
+          const beam = rtiBeam(row);
+          if (!radar || beam == null) continue;
+          const key = `${radar}|${beam}`;
+          if (!byKey[key]) byKey[key] = {radar, beam, plots: {}};
+          byKey[key].plots[spec.label] = row.src;
+        }
+      }
+      return Object.values(byKey).sort((a, b) => {
+        if (a.radar !== b.radar) return a.radar.localeCompare(b.radar);
+        return a.beam - b.beam;
+      });
+    }
+
     function fillBeams(item) {
-      const rows = (item && item.rti) || [];
+      const rows = (sourceId === 'rti_comparison')
+        ? comparisonRows(item && item.date)
+        : rtiRows(item);
       const beams = [...new Set(rows.map(rtiBeam).filter((b) => b != null))].sort((a, b) => a - b);
       if (!beams.length) {
         $beam.hidden = true;
@@ -232,6 +277,26 @@
       }
       if (!item) {
         $main.innerHTML = `<p class="empty">No ${src ? src.label : ''} results for ${date || 'this date'}.</p>`;
+        return;
+      }
+      if (src.id === 'rti_comparison') {
+        const beam = currentBeam;
+        const rows = comparisonRows(date).filter((r) => r.beam === beam);
+        const heading = beam != null
+          ? `Range–time LoS comparison (beam ${beam})`
+          : 'Range–time LoS comparison';
+        const body = rows.map((r) => {
+          const cells = COMPARE_ORDER.map((lab) => {
+            const srcUrl = r.plots[lab];
+            return `<div><h2>${lab}</h2>${
+              srcUrl
+                ? mediaBlock(srcUrl, 'image')
+                : '<p class="empty">Not available for this radar and beam.</p>'
+            }</div>`;
+          }).join('');
+          return `<section><h2>${r.radar} · beam ${r.beam}</h2><div class="compare4">${cells}</div></section>`;
+        }).join('') || '<p class="empty">No range–time plots for this beam.</p>';
+        $main.innerHTML = `<section><h2>${heading} · ${item.label}</h2></section>${body}`;
         return;
       }
       const extra = [];
