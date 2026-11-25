@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>FitACF minor-storm results</title>
+  <style>
+    :root {
+      --ink: #1b2430;
+      --muted: #5b6775;
+      --line: #d5dbe3;
+      --paper: #f6f3ec;
+      --card: #fffdf8;
+      --accent: #1f4e79;
+      --empty: #8b93a0;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+    header {
+      background: var(--accent);
+      color: #f4f7fb;
+      padding: 1.1rem 1.4rem 1rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+    header p { margin: 0; font-size: 0.95rem; opacity: 0.88; }
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 0.85rem;
+      align-items: center;
+      padding: 0.85rem 1.4rem;
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .bar label {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      flex: 1 1 100%;
+    }
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+    @media (min-width: 980px) {
+      .gallery { grid-template-columns: 1fr 1fr; }
+    }
+    .compare4 { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+    @media (min-width: 980px) {
+      .compare4 { grid-template-columns: 1fr 1fr; }
+    }
+    .source-btn, select, .chip {
+      font: inherit;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .source-btn {
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .source-btn[aria-current="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .source-btn[data-source="rti_comparison"] {
+      font-weight: 600;
+    }
+    select {
+      font-size: 1rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 4px;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .chip {
+      padding: 0.28rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+    }
+    .chip[aria-current="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    main { padding: 1rem 1.4rem 2.5rem; max-width: 1400px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.85rem 1rem 1rem;
+      margin: 0 0 1rem;
+    }
+    section h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.05rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    figure { margin: 0; }
+    figure img, figure video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #111;
+      border-radius: 4px;
+    }
+    figure a { display: block; }
+    .pair { display: grid; grid-template-columns: 1fr; gap: 0.85rem; }
+    @media (min-width: 980px) {
+      .pair { grid-template-columns: 1fr 1fr; }
+    }
+    .empty { color: var(--empty); font-style: italic; padding: 1.4rem 0.2rem; }
+    .status { color: var(--muted); font-size: 0.92rem; }
+  </style>
+</head>
+<body data-page="results-v3" data-default-source="rti_comparison">
+  <header>
+    <h1>RT-plot comparison</h1>
+    <p>Pick a source, then a date. RT-plot comparison shows four range–time plots together.</p>
+  </header>
+  <div class="bar">
+    <label>Source</label>
+    <div class="sources" id="sources"></div>
+    <label for="date-select">Date</label>
+    <select id="date-select"></select>
+    <label for="beam-select" id="beam-label" hidden>Beam</label>
+    <select id="beam-select" hidden></select>
+    <div class="chips" id="chips"></div>
+  </div>
+  <main id="main">
+    <p class="status">Loading catalogs from disk…</p>
+  </main>
+  <script>
+    const KIND = [
+      { key: 'combined', title: 'Combined solar wind / Joule heating / AE' },
+      { key: 'au_al', title: 'AU and AL' },
+    ];
+
+    let sources = [];
+    let sourceId = null;
+    let currentDate = null;
+    let currentBeam = null;
+
+    const $main = document.getElementById('main');
+    const $sources = document.getElementById('sources');
+    const $select = document.getElementById('date-select');
+    const $beam = document.getElementById('beam-select');
+    const $beamLabel = document.getElementById('beam-label');
+    const $chips = document.getElementById('chips');
+
+    function params() {
+      const q = new URLSearchParams(location.search);
+      const date = (q.get('date') || (location.hash.slice(1) || '')).replace(/-/g, '');
+      const beamRaw = q.get('beam');
+      const beam = beamRaw != null && beamRaw !== '' ? parseInt(beamRaw, 10) : null;
+      return { source: q.get('source'), date: date || null, beam: Number.isFinite(beam) ? beam : null };
+    }
+
+    function setUrl(source, date, beam) {
+      const url = new URL(location.href);
+      url.searchParams.set('source', source);
+      if (date) url.searchParams.set('date', date);
+      else url.searchParams.delete('date');
+      if (beam != null) url.searchParams.set('beam', String(beam));
+      else url.searchParams.delete('beam');
+      history.replaceState(null, '', url);
+    }
+
+    function rtiBeam(row) {
+      if (typeof row.beam === 'number') return row.beam;
+      const m = /beam\s+(\d+)/i.exec(row.label || '');
+      return m ? parseInt(m[1], 10) : null;
+    }
+
+    function rtiRadar(row) {
+      if (row.radar) return row.radar;
+      return (row.label || '').split('·')[0].trim();
+    }
+
+    const COMPARE_ORDER = [
+      'FitACF 2.5',
+      'FitACF 3.0 despeck',
+      'FitACF 3.0 despeck processed 1',
+      'FitACF 3.0 despeck processed 2',
+    ];
+
+    const COMPARE_SOURCES = [
+      {id: 'fitacf25', label: 'FitACF 2.5'},
+      {id: 'fitacf30_despeck', label: 'FitACF 3.0 despeck'},
+      {id: 'fitacf3_despeck_processed1', label: 'FitACF 3.0 despeck processed 1'},
+      {id: 'fitacf3_despeck_processed2', label: 'FitACF 3.0 despeck processed 2'},
+    ];
+
+    function rtiRows(item) {
+      if (item && item.rti_compare && item.rti_compare.length) return item.rti_compare;
+      return (item && item.rti) || [];
+    }
+
+    function comparisonRows(date) {
+      const byKey = {};
+      for (const spec of COMPARE_SOURCES) {
+        const src = sources.find((s) => s.id === spec.id);
+        const item = src && src.dates.find((d) => d.date === date);
+        for (const row of (item && item.rti) || []) {
+          const radar = rtiRadar(row);
+          const beam = rtiBeam(row);
+          if (!radar || beam == null) continue;
+          const key = `${radar}|${beam}`;
+          if (!byKey[key]) byKey[key] = {radar, beam, plots: {}};
+          byKey[key].plots[spec.label] = row.src;
+        }
+      }
+      return Object.values(byKey).sort((a, b) => {
+        if (a.radar !== b.radar) return a.radar.localeCompare(b.radar);
+        return a.beam - b.beam;
+      });
+    }
+
+    function fillBeams(item) {
+      const rows = (sourceId === 'rti_comparison' || /comparison/i.test((currentSource() || {}).label || ''))
+        ? comparisonRows(item && item.date)
+        : rtiRows(item);
+      const beams = [...new Set(rows.map(rtiBeam).filter((b) => b != null))].sort((a, b) => a - b);
+      if (!beams.length) {
+        $beam.hidden = true;
+        $beamLabel.hidden = true;
+        $beam.innerHTML = '';
+        currentBeam = null;
+        return [];
+      }
+      $beam.hidden = false;
+      $beamLabel.hidden = false;
+      $beam.innerHTML = beams.map(
+        (b) => `<option value="${b}">${b}</option>`
+      ).join('');
+      const preferred = currentBeam != null && beams.includes(currentBeam)
+        ? currentBeam
+        : (beams.includes(10) ? 10 : beams[0]);
+      currentBeam = preferred;
+      $beam.value = String(preferred);
+      $beam.onchange = () => {
+        currentBeam = parseInt($beam.value, 10);
+        renderDate(currentDate);
+      };
+      return beams;
+    }
+
+    function currentSource() {
+      return sources.find((s) => s.id === sourceId);
+    }
+
+    function mediaBlock(src, kind) {
+      if (!src) return '<p class="empty">Not available for this date.</p>';
+      if (kind === 'video') {
+        return `<figure><video controls preload="metadata" src="${src}"></video></figure>`;
+      }
+      return `<figure><a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt=""></a></figure>`;
+    }
+
+    function renderDate(date) {
+      const src = currentSource();
+      const item = src && src.dates.find((d) => d.date === date);
+      currentDate = date;
+      fillBeams(item);
+      setUrl(sourceId, date, currentBeam);
+      $select.value = date || '';
+      for (const btn of $chips.querySelectorAll('.chip')) {
+        btn.setAttribute('aria-current', btn.dataset.date === date ? 'true' : 'false');
+      }
+      if (!item) {
+        $main.innerHTML = `<p class="empty">No ${src ? src.label : ''} results for ${date || 'this date'}.</p>`;
+        return;
+      }
+      if (src.id === 'rti_comparison' || /comparison/i.test(src.label || '')) {
+        const beam = currentBeam;
+        const rows = comparisonRows(date).filter((r) => r.beam === beam);
+        const heading = beam != null
+          ? `Range–time LoS comparison (beam ${beam})`
+          : 'Range–time LoS comparison';
+        const body = rows.map((r) => {
+          const cells = COMPARE_ORDER.map((lab) => {
+            const srcUrl = r.plots[lab];
+            return `<div><h2>${lab}</h2>${
+              srcUrl
+                ? mediaBlock(srcUrl, 'image')
+                : '<p class="empty">Not available for this radar and beam.</p>'
+            }</div>`;
+          }).join('');
+          return `<section><h2>${r.radar} · beam ${r.beam}</h2><div class="compare4">${cells}</div></section>`;
+        }).join('') || '<p class="empty">No range–time plots for this beam.</p>';
+        $main.innerHTML = `<section><h2>${heading} · ${item.label}</h2></section>${body}`;
+        return;
+      }
+      const extra = [];
+      if (item.pot_los) {
+        extra.push(`
+        <section>
+          <h2>Potential and LoS velocity · ${src.label} · ${item.label}</h2>
+          ${mediaBlock(item.pot_los, 'video')}
+        </section>`);
+      }
+      if (item.los_fov) {
+        extra.push(`
+        <section>
+          <h2>All-radar LoS FOV (12:30 UT) · ${src.label} · ${item.label}</h2>
+          ${mediaBlock(item.los_fov, 'image')}
+        </section>`);
+      }
+      if (item.rti && item.rti.length) {
+        const beam = currentBeam;
+        const rows = item.rti.filter((r) => rtiBeam(r) === beam);
+        const heading = beam != null
+          ? `Range–time LoS (beam ${beam})`
+          : 'Range–time LoS';
+        extra.push(`
+        <section>
+          <h2>${heading} · ${src.label} · ${item.label}</h2>
+          <div class="gallery">
+            ${rows.map((r) => `<div><h2>${rtiRadar(r)}</h2>${mediaBlock(r.src, 'image')}</div>`).join('')
+              || '<p class="empty">No range–time plots for this beam.</p>'}
+          </div>
+        </section>`);
+      }
+      $main.innerHTML = `
+        ${KIND.map((k) => `
+          <section>
+            <h2>${k.title} · ${src.label} · ${item.label}</h2>
+            ${mediaBlock(item[k.key], 'image')}
+          </section>`).join('')}
+        <section>
+          <h2>Sub-auroral maps · ${src.label} · ${item.label}</h2>
+          <div class="pair">
+            <div>
+              <h2>MLT–MLAT</h2>
+              ${mediaBlock(item.movie, 'video')}
+            </div>
+            <div>
+              <h2>Polar</h2>
+              ${mediaBlock(item.polar, 'video')}
+            </div>
+          </div>
+        </section>
+        ${extra.join('')}`;
+    }
+
+    function fillDates(preferred) {
+      const src = currentSource();
+      const dates = src ? src.dates : [];
+      $select.innerHTML = dates.map(
+        (d) => `<option value="${d.date}">${d.label}</option>`
+      ).join('');
+      $chips.innerHTML = dates.map(
+        (d) => `<button type="button" class="chip" data-date="${d.date}">${d.label}</button>`
+      ).join('');
+      $select.onchange = () => renderDate($select.value);
+      $chips.onclick = (ev) => {
+        const btn = ev.target.closest('.chip');
+        if (btn) renderDate(btn.dataset.date);
+      };
+      if (!dates.length) {
+        $main.innerHTML = `<p class="empty">No figures or movies for ${src ? src.label : 'this source'}.</p>`;
+        setUrl(sourceId, null);
+        return;
+      }
+      const next = dates.some((d) => d.date === preferred) ? preferred : dates[0].date;
+      renderDate(next);
+    }
+
+    function setSource(id, preferredDate) {
+      sourceId = id;
+      for (const btn of $sources.querySelectorAll('.source-btn')) {
+        btn.setAttribute('aria-current', btn.dataset.source === id ? 'true' : 'false');
+      }
+      fillDates(preferredDate || currentDate);
+    }
+
+    function fillSources(preferredSource, preferredDate) {
+      $sources.innerHTML = sources.map(
+        (s) => `<button type="button" class="source-btn" data-source="${s.id}">${s.label}</button>`
+      ).join('');
+      $sources.onclick = (ev) => {
+        const btn = ev.target.closest('.source-btn');
+        if (btn) setSource(btn.dataset.source, currentDate);
+      };
+      const fallback = document.body.dataset.defaultSource;
+      const first = sources.some((s) => s.id === preferredSource)
+        ? preferredSource
+        : (sources.some((s) => s.id === fallback) ? fallback : (sources[0] && sources[0].id));
+      if (!first) {
+        $main.innerHTML = '<p class="empty">No result catalogs found.</p>';
+        return;
+      }
+      setSource(first, preferredDate);
+    }
+
+    fetch('catalog.json?v=rti-compare', {cache: 'no-store'})
+      .then((r) => {
+        if (!r.ok) return fetch('/api/catalog', {cache: 'no-store'}).then((r2) => r2.json());
+        return r.json();
+      })
+      .then((payload) => {
+        sources = payload.sources || [];
+        const want = params();
+        if (want.beam != null) currentBeam = want.beam;
+        fillSources(want.source, want.date);
+      })
+      .catch((err) => {
+        $main.innerHTML = `<p class="empty">Could not load /api/catalog. Start the server with serve.py. ${err}</p>`;
+      });
+  </script>
+</body>
+</html>
