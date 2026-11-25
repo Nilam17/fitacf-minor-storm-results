@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>FitACF minor-storm results</title>
   <style>
     :root {
@@ -132,7 +134,7 @@
 <body>
   <header>
     <h1>FitACF minor-storm results</h1>
-    <p>Pick FitACF 2.5, FitACF 3.0 despeck, processed 1, processed 2, or RT-plot comparison, then a date.</p>
+    <p>Pick a source, then a date. RT-plot comparison shows four range–time plots together.</p>
   </header>
   <div class="bar">
     <label>Source</label>
@@ -233,7 +235,7 @@
     }
 
     function fillBeams(item) {
-      const rows = (sourceId === 'rti_comparison')
+      const rows = (sourceId === 'rti_comparison' || /comparison/i.test((currentSource() || {}).label || ''))
         ? comparisonRows(item && item.date)
         : rtiRows(item);
       const beams = [...new Set(rows.map(rtiBeam).filter((b) => b != null))].sort((a, b) => a - b);
@@ -287,7 +289,7 @@
         $main.innerHTML = `<p class="empty">No ${src ? src.label : ''} results for ${date || 'this date'}.</p>`;
         return;
       }
-      if (src.id === 'rti_comparison') {
+      if (src.id === 'rti_comparison' || /comparison/i.test(src.label || '')) {
         const beam = currentBeam;
         const rows = comparisonRows(date).filter((r) => r.beam === beam);
         const heading = beam != null
