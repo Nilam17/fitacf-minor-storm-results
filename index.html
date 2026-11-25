@@ -127,6 +127,8 @@
     <div class="sources" id="sources"></div>
     <label for="date-select">Date</label>
     <select id="date-select"></select>
+    <label for="beam-select" id="beam-label" hidden>Beam</label>
+    <select id="beam-select" hidden></select>
     <div class="chips" id="chips"></div>
   </div>
   <main id="main">
@@ -141,24 +143,69 @@
     let sources = [];
     let sourceId = null;
     let currentDate = null;
+    let currentBeam = null;
 
     const $main = document.getElementById('main');
     const $sources = document.getElementById('sources');
     const $select = document.getElementById('date-select');
+    const $beam = document.getElementById('beam-select');
+    const $beamLabel = document.getElementById('beam-label');
     const $chips = document.getElementById('chips');
 
     function params() {
       const q = new URLSearchParams(location.search);
       const date = (q.get('date') || (location.hash.slice(1) || '')).replace(/-/g, '');
-      return { source: q.get('source'), date: date || null };
+      const beamRaw = q.get('beam');
+      const beam = beamRaw != null && beamRaw !== '' ? parseInt(beamRaw, 10) : null;
+      return { source: q.get('source'), date: date || null, beam: Number.isFinite(beam) ? beam : null };
     }
 
-    function setUrl(source, date) {
+    function setUrl(source, date, beam) {
       const url = new URL(location.href);
       url.searchParams.set('source', source);
       if (date) url.searchParams.set('date', date);
       else url.searchParams.delete('date');
+      if (beam != null) url.searchParams.set('beam', String(beam));
+      else url.searchParams.delete('beam');
       history.replaceState(null, '', url);
+    }
+
+    function rtiBeam(row) {
+      if (typeof row.beam === 'number') return row.beam;
+      const m = /beam\s+(\d+)/i.exec(row.label || '');
+      return m ? parseInt(m[1], 10) : null;
+    }
+
+    function rtiRadar(row) {
+      if (row.radar) return row.radar;
+      return (row.label || '').split('·')[0].trim();
+    }
+
+    function fillBeams(item) {
+      const rows = (item && item.rti) || [];
+      const beams = [...new Set(rows.map(rtiBeam).filter((b) => b != null))].sort((a, b) => a - b);
+      if (!beams.length) {
+        $beam.hidden = true;
+        $beamLabel.hidden = true;
+        $beam.innerHTML = '';
+        currentBeam = null;
+        return [];
+      }
+      $beam.hidden = false;
+      $beamLabel.hidden = false;
+      $beam.innerHTML = beams.map(
+        (b) => `<option value="${b}">${b}</option>`
+      ).join('');
+      const preferred = currentBeam != null && beams.includes(currentBeam)
+        ? currentBeam
+        : (beams.includes(10) ? 10 : beams[0]);
+      currentBeam = preferred;
+      $beam.value = String(preferred);
+      $beam.onchange = () => {
+        currentBeam = parseInt($beam.value, 10);
+        renderDate(currentDate);
+      };
+      return beams;
     }
 
     function currentSource() {
@@ -177,7 +224,8 @@
       const src = currentSource();
       const item = src && src.dates.find((d) => d.date === date);
       currentDate = date;
-      setUrl(sourceId, date);
+      fillBeams(item);
+      setUrl(sourceId, date, currentBeam);
       $select.value = date || '';
       for (const btn of $chips.querySelectorAll('.chip')) {
         btn.setAttribute('aria-current', btn.dataset.date === date ? 'true' : 'false');
@@ -202,11 +250,17 @@
         </section>`);
       }
       if (item.rti && item.rti.length) {
+        const beam = currentBeam;
+        const rows = item.rti.filter((r) => rtiBeam(r) === beam);
+        const heading = beam != null
+          ? `Range–time LoS (beam ${beam})`
+          : 'Range–time LoS';
         extra.push(`
         <section>
-          <h2>Range–time LoS (beam 10) · ${src.label} · ${item.label}</h2>
+          <h2>${heading} · ${src.label} · ${item.label}</h2>
           <div class="gallery">
-            ${item.rti.map((r) => `<div><h2>${r.label}</h2>${mediaBlock(r.src, 'image')}</div>`).join('')}
+            ${rows.map((r) => `<div><h2>${rtiRadar(r)}</h2>${mediaBlock(r.src, 'image')}</div>`).join('')
+              || '<p class="empty">No range–time plots for this beam.</p>'}
           </div>
         </section>`);
       }
@@ -289,6 +343,7 @@
       .then((payload) => {
         sources = payload.sources || [];
         const want = params();
+        if (want.beam != null) currentBeam = want.beam;
         fillSources(want.source, want.date);
       })
       .catch((err) => {
