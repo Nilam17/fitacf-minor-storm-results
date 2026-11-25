@@ -239,7 +239,7 @@
     function fillBeams(item) {
       const rows = (sourceId === 'rti_comparison' || /comparison/i.test((currentSource() || {}).label || ''))
         ? comparisonRows(item && item.date)
-        : rtiRows(item);
+        : [];
       const beams = [...new Set(rows.map(rtiBeam).filter((b) => b != null))].sort((a, b) => a - b);
       if (!beams.length) {
         $beam.hidden = true;
@@ -324,21 +324,6 @@
         <section>
           <h2>All-radar LoS FOV (12:30 UT) · ${src.label} · ${item.label}</h2>
           ${mediaBlock(item.los_fov, 'image')}
-        </section>`);
-      }
-      if (item.rti && item.rti.length) {
-        const beam = currentBeam;
-        const rows = item.rti.filter((r) => rtiBeam(r) === beam);
-        const heading = beam != null
-          ? `Range–time LoS (beam ${beam})`
-          : 'Range–time LoS';
-        extra.push(`
-        <section>
-          <h2>${heading} · ${src.label} · ${item.label}</h2>
-          <div class="gallery">
-            ${rows.map((r) => `<div><h2>${rtiRadar(r)}</h2>${mediaBlock(r.src, 'image')}</div>`).join('')
-              || '<p class="empty">No range–time plots for this beam.</p>'}
-          </div>
         </section>`);
       }
       $main.innerHTML = `
