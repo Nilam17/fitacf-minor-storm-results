@@ -181,8 +181,8 @@
       ]
     },
     {
-      "id": "fitacf3_despeck_processed",
-      "label": "FitACF 3.0 despeck processed",
+      "id": "fitacf3_despeck_processed1",
+      "label": "FitACF 3.0 despeck processed 1",
       "dates": [
         {
           "date": "20240324",
@@ -590,6 +590,506 @@
             {
               "label": "WAL \u00b7 beam 10",
               "src": "new_minor_storm_all_DA/Processed/rti_los_20241109/sd_rti_20241109_wal_bm10.png?v=1795263802"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fitacf3_despeck_processed2",
+      "label": "FitACF 3.0 despeck processed 2",
+      "dates": [
+        {
+          "date": "20240324",
+          "label": "2024-03-24",
+          "combined": "new_minor_storm_all_DA/Processed2/combined_all_DA_20240324.png?v=1795142677",
+          "au_al": "new_minor_storm_all_DA/Processed2/au_al_faccheck_20240324.png?v=1795142678",
+          "corr": "new_minor_storm_all_DA/Processed2/corr_factor_20240324.png?v=1795142679",
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240324/all_sub_auroral_20240324.mp4?v=1795167855",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240324/all_sub_auroral_polar_20240324.mp4?v=1795167873",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20240324.mp4?v=1795170587",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20240324_1230.png?v=1795167895",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_cly_bm10.png?v=1795263731"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_cve_bm10.png?v=1795263732"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_cvw_bm10.png?v=1795263732"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_fhe_bm10.png?v=1795263732"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_fhw_bm10.png?v=1795263733"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_hkw_bm10.png?v=1795263733"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_hok_bm10.png?v=1795263733"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_ice_bm10.png?v=1795263734"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_icw_bm10.png?v=1795263734"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_inv_bm10.png?v=1795263734"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_jme_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_kap_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_kod_bm10.png?v=1795263735"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_ksr_bm10.png?v=1795263736"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_pgr_bm10.png?v=1795263736"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_rkn_bm10.png?v=1795263736"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_sas_bm10.png?v=1795263737"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240324/sd_rti_20240324_wal_bm10.png?v=1795263737"
+            }
+          ]
+        },
+        {
+          "date": "20240628",
+          "label": "2024-06-28",
+          "combined": "new_minor_storm_all_DA/Processed2/combined_all_DA_20240628.png?v=1795524822",
+          "au_al": "new_minor_storm_all_DA/Processed2/au_al_faccheck_20240628.png?v=1795524823",
+          "corr": "new_minor_storm_all_DA/Processed2/corr_factor_20240628.png?v=1795524823",
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240628/all_sub_auroral_20240628.mp4?v=1795525460",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240628/all_sub_auroral_polar_20240628.mp4?v=1795525474",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20240628.mp4?v=1795529592",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20240628_1230.png?v=1795525488",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_cly_bm10.png?v=1795263743"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_cve_bm10.png?v=1795263743"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_cvw_bm10.png?v=1795263743"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_hkw_bm10.png?v=1795263744"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_hok_bm10.png?v=1795263744"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_ice_bm10.png?v=1795263744"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_icw_bm10.png?v=1795263744"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_inv_bm10.png?v=1795263745"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_jme_bm10.png?v=1795263745"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_kap_bm10.png?v=1795263745"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_kod_bm10.png?v=1795263746"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_ksr_bm10.png?v=1795263746"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_pgr_bm10.png?v=1795263746"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_rkn_bm10.png?v=1795263747"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_sas_bm10.png?v=1795263747"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240628/sd_rti_20240628_wal_bm10.png?v=1795263747"
+            }
+          ]
+        },
+        {
+          "date": "20240804",
+          "label": "2024-08-04",
+          "combined": "new_minor_storm_all_DA/Processed2/combined_all_DA_20240804.png?v=1795579190",
+          "au_al": "new_minor_storm_all_DA/Processed2/au_al_faccheck_20240804.png?v=1795579191",
+          "corr": "new_minor_storm_all_DA/Processed2/corr_factor_20240804.png?v=1795579192",
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240804/all_sub_auroral_20240804.mp4?v=1795583901",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240804/all_sub_auroral_polar_20240804.mp4?v=1795583911",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20240804.mp4?v=1795501852",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20240804_1230.png?v=1795583923",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_cly_bm10.png?v=1795263753"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_cve_bm10.png?v=1795263754"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_cvw_bm10.png?v=1795263754"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_fhe_bm10.png?v=1795263754"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_fhw_bm10.png?v=1795263755"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_hkw_bm10.png?v=1795263755"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_hok_bm10.png?v=1795263755"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_ice_bm10.png?v=1795263756"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_icw_bm10.png?v=1795263756"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_inv_bm10.png?v=1795263756"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_jme_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_kap_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_kod_bm10.png?v=1795263757"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_ksr_bm10.png?v=1795263758"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_pgr_bm10.png?v=1795263758"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_rkn_bm10.png?v=1795263758"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_sas_bm10.png?v=1795263758"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240804/sd_rti_20240804_wal_bm10.png?v=1795263759"
+            }
+          ]
+        },
+        {
+          "date": "20240912",
+          "label": "2024-09-12",
+          "combined": "new_minor_storm_all_DA/Processed2/combined_all_DA_20240912.png?v=1795560516",
+          "au_al": "new_minor_storm_all_DA/Processed2/au_al_faccheck_20240912.png?v=1795560517",
+          "corr": "new_minor_storm_all_DA/Processed2/corr_factor_20240912.png?v=1795560518",
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240912/all_sub_auroral_20240912.mp4?v=1795555896",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240912/all_sub_auroral_polar_20240912.mp4?v=1795555911",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20240912.mp4?v=1795560389",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20240912_1230.png?v=1795555939",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_cly_bm10.png?v=1795263768"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_cve_bm10.png?v=1795263768"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_cvw_bm10.png?v=1795263769"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_fhe_bm10.png?v=1795263769"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_fhw_bm10.png?v=1795263769"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_hkw_bm10.png?v=1795263770"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_hok_bm10.png?v=1795263770"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_ice_bm10.png?v=1795263770"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_icw_bm10.png?v=1795263771"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_inv_bm10.png?v=1795263771"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_jme_bm10.png?v=1795263771"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_kap_bm10.png?v=1795263772"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_kod_bm10.png?v=1795263772"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_ksr_bm10.png?v=1795263772"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_pgr_bm10.png?v=1795263773"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_rkn_bm10.png?v=1795263773"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_sas_bm10.png?v=1795263773"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240912/sd_rti_20240912_wal_bm10.png?v=1795263774"
+            }
+          ]
+        },
+        {
+          "date": "20240917",
+          "label": "2024-09-17",
+          "combined": "new_minor_storm_all_DA/Processed2/combined_all_DA_20240917.png?v=1795187378",
+          "au_al": "new_minor_storm_all_DA/Processed2/au_al_faccheck_20240917.png?v=1795187380",
+          "corr": "new_minor_storm_all_DA/Processed2/corr_factor_20240917.png?v=1795187382",
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240917/all_sub_auroral_20240917.mp4?v=1795576425",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20240917/all_sub_auroral_polar_20240917.mp4?v=1795576442",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20240917.mp4?v=1795580207",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20240917_1230.png?v=1795576455",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_cly_bm10.png?v=1795263777"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_cve_bm10.png?v=1795263778"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_cvw_bm10.png?v=1795263778"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_fhe_bm10.png?v=1795263778"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_fhw_bm10.png?v=1795263778"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_hkw_bm10.png?v=1795263779"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_hok_bm10.png?v=1795263779"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_ice_bm10.png?v=1795263779"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_icw_bm10.png?v=1795263780"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_inv_bm10.png?v=1795263780"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_jme_bm10.png?v=1795263780"
+            },
+            {
+              "label": "KAP \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_kap_bm10.png?v=1795263781"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_ksr_bm10.png?v=1795263781"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_pgr_bm10.png?v=1795263781"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_rkn_bm10.png?v=1795263782"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_sas_bm10.png?v=1795263782"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20240917/sd_rti_20240917_wal_bm10.png?v=1795263782"
+            }
+          ]
+        },
+        {
+          "date": "20241109",
+          "label": "2024-11-09",
+          "combined": null,
+          "au_al": null,
+          "corr": null,
+          "movie": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20241109/all_sub_auroral_20241109.mp4?v=1795262375",
+          "polar": "new_minor_storm_all_DA/Processed2/all_sub_auroral_20241109/all_sub_auroral_polar_20241109.mp4?v=1795262390",
+          "pot_los": "new_minor_storm_all_DA/Processed2/sd_polar_fov_pot_20241109.mp4?v=1795267885",
+          "los_fov": "new_minor_storm_all_DA/Processed2/sd_polar_fov_fan_20241109_1230.png?v=1795262421",
+          "rti": [
+            {
+              "label": "CLY \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_cly_bm10.png?v=1795263796"
+            },
+            {
+              "label": "CVE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_cve_bm10.png?v=1795263796"
+            },
+            {
+              "label": "CVW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_cvw_bm10.png?v=1795263797"
+            },
+            {
+              "label": "FHE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_fhe_bm10.png?v=1795263797"
+            },
+            {
+              "label": "FHW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_fhw_bm10.png?v=1795263797"
+            },
+            {
+              "label": "HKW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_hkw_bm10.png?v=1795263798"
+            },
+            {
+              "label": "HOK \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_hok_bm10.png?v=1795263798"
+            },
+            {
+              "label": "ICE \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_ice_bm10.png?v=1795263799"
+            },
+            {
+              "label": "ICW \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_icw_bm10.png?v=1795263799"
+            },
+            {
+              "label": "INV \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_inv_bm10.png?v=1795263799"
+            },
+            {
+              "label": "JME \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_jme_bm10.png?v=1795263800"
+            },
+            {
+              "label": "KOD \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_kod_bm10.png?v=1795263800"
+            },
+            {
+              "label": "KSR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_ksr_bm10.png?v=1795263800"
+            },
+            {
+              "label": "PGR \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_pgr_bm10.png?v=1795263801"
+            },
+            {
+              "label": "RKN \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_rkn_bm10.png?v=1795263801"
+            },
+            {
+              "label": "SAS \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_sas_bm10.png?v=1795263802"
+            },
+            {
+              "label": "WAL \u00b7 beam 10",
+              "src": "new_minor_storm_all_DA/Processed2/rti_los_20241109/sd_rti_20241109_wal_bm10.png?v=1795263802"
             }
           ]
         }
